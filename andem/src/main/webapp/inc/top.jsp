@@ -42,7 +42,6 @@
 		});
 	});
 	
-	
 </script>
 
 <style type="text/css">
@@ -70,29 +69,45 @@
 </head>
 <body class="col-sm-offset-1 col-sm-10">
 	<header>
-		<div class="col-sm-1">
-			<a href='<c:url value="/main.do"/>'><img alt="logo" src='<c:url value="/img/logo2.jpg"/>'></a>
-		</div><!-- logo -->
+		<a href='<c:url value="/main.do"/>' style="float: left; margin-right: 5%;"><img alt="logo" src='<c:url value="/img/logo2.jpg"/>'></a>
 		
-		<div class="col-sm-11">
-			<ul style="list-style: none; margin-top: 1%;">
-				<li class="lis ">
-					<a href="#"><img alt="CU" src='<c:url value="/img/CU.png"/>'></a>
-				</li>
-				<li class="lis">
-					<a href="#"><img alt="GS25" src='<c:url value="/img/GS25.png"/>'></a>
-				</li>
-				<li class="lis">
-					<a href="#"><img alt="7 ELEVEN" src='<c:url value="/img/7 ELEVEN.png"/>'></a>
-				</li>
-				<li class="lis">
-					<a href="#"><img alt="With Me" src='<c:url value="/img/With Me.png"/>'></a>
-				</li>
-				<li>
-					<a href="#">
-						<img alt="ministop" src='<c:url value="/img/ministop.jpg"/>'>
-					</a>
-				</li>
-			</ul>
-		</div><!-- menu -->
+		<ul style="list-style: none; margin-top: 1%;">
+			<li class="lis dropdown">
+				<a href="#" class="dropdown-toggle" id="cumenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img alt="CU" src='<c:url value="/img/CU.png"/>'></a>
+				
+				<ul class="dropdown-menu" aria-labelledby="cumenu">
+					<li><a href="#">할인행사</a></li>
+				    <li><a href="#">행사정보</a></li>
+				    <li><a href="#">편의점 정보</a></li>
+				</ul>
+			</li>
+			
+			<li class="lis dropdown">
+				<a href="#" class="dropdown-toggle" id="gsmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img alt="GS25" src='<c:url value="/img/GS25.png"/>'></a>
+				<ul class="dropdown-menu" aria-labelledby="gsmenu">
+					<li><a href="#">할인행사</a></li>
+				    <li><a href="#">행사정보</a></li>
+				    <li><a href="#">편의점 정보</a></li>
+				</ul>
+			</li>
+			<li class="lis dropdown">
+				<a href="#" class="dropdown-toggle" id="semenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img alt="7 ELEVEN" src='<c:url value="/img/7 ELEVEN.png"/>'></a>
+				<ul class="dropdown-menu" aria-labelledby="semenu">
+					<li><a href="#">할인행사</a></li>
+				    <li><a href="#">행사정보</a></li>
+				    <li><a href="#">편의점 정보</a></li>
+				</ul>
+			</li>
+			<li class="lis dropdown">
+				<a href="#" class="dropdown-toggle" id="wmmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img alt="With Me" src='<c:url value="/img/With Me.png"/>'></a>
+				<ul class="dropdown-menu" aria-labelledby="wmmenu">
+					<li><a href="#">할인행사</a></li>
+				    <li><a href="#">행사정보</a></li>
+				    <li><a href="#">편의점 정보</a></li>
+				</ul>
+			</li>
+			<li class="">
+				<a href="#"><img alt="ministop" src='<c:url value="/img/ministop.jpg"/>'></a>
+			</li>
+		</ul>
 	</header>
