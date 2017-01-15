@@ -91,8 +91,13 @@
 				    <li><a href="#">편의점 정보</a></li>
 				</ul>
 			</li>
-			<li class="">
-				<a href="#"><img alt="ministop" src='<c:url value="/img/ministop.jpg"/>'></a>
+			<li class="lis dropdown">
+				<a href="#"  class="dropdown-toggle" id="mini" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img alt="ministop" src='<c:url value="/img/ministop.jpg"/>'></a>
+				<ul class="dropdown-menu" aria-labelledby="mini">
+					<li><a href="#">할인행사</a></li>
+				    <li><a href="#">행사정보</a></li>
+				    <li><a href="#">편의점 정보</a></li>
+				</ul>
 			</li>
 		</ul>
 	</header>
