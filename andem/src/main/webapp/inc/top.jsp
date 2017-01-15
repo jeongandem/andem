@@ -18,29 +18,14 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
-<!-- bxSlider Javascript file -->
-<script src='<c:url value="/js/jquery.bxslider.min.js"/>'></script>
-<!-- bxSlider CSS file -->
-<link href='<c:url value="/lib/jquery.bxslider.css"/>' rel="stylesheet" />
-
-
 <script type="text/javascript">
-	/* 맨 위 그림 슬라이드 */
-	$(document).ready(function(){
-		$('.bxslider').bxSlider({
-			mode:'horizontal', //default : 'horizontal', options: 'horizontal', 'vertical', 'fade'
-			speed:1000, //default:500 이미지변환 속도
-			auto: true, //default:false 자동 시작
-			autoControls: true, //default:false 정지,시작 콘트롤 노출, css 수정이 필요
-		});
 		
 		/* 탭 */
 		$('#myTab a').click(function (e) {
 		   e.preventDefault()
 		   $(this).tab('show')
 		});
-	});
+
 	
 </script>
 
@@ -76,7 +61,7 @@
 				<a href="#" class="dropdown-toggle" id="cumenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><img alt="CU" src='<c:url value="/img/CU.png"/>'></a>
 				
 				<ul class="dropdown-menu" aria-labelledby="cumenu">
-					<li><a href="#">할인행사</a></li>
+					<li><a href='<c:url value="/cu/sale.do"/>'>할인행사</a></li>
 				    <li><a href="#">행사정보</a></li>
 				    <li><a href="#">편의점 정보</a></li>
 				</ul>

@@ -2,13 +2,45 @@
     pageEncoding="UTF-8"%>
 <%@ include file="/inc/top.jsp" %>
 	<nav>
-		<ul class="bxslider">
-			<li><a href="http://cu.bgfretail.com/index.do"><img class="imgs" src='<c:url value="/img/cu info.jpg"/>'/></a></li>
-			<li><a href="http://gs25.gsretail.com/gscvs/ko/main"><img class="imgs" src='<c:url value="/img/gs25 info.jpg"/>'/></a></li>
-			<li><a href="http://www.7-eleven.co.kr/"><img class="imgs" src='<c:url value="/img/7 ELEVEN info.jpg"/>'/></a></li>
-			<li><a href="http://www.with-me.co.kr/index.asp"><img class="imgs" src='<c:url value="/img/With Me info.jpg"/>'/></a></li>
-			<li><a href="https://www.ministop.co.kr/"><img class="imgs" src='<c:url value="/img/ministop info.jpg"/>'/></a></li>
-		</ul><!-- 참고 : http://bxslider.com/examples -> 다양한 디자인 -->
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+		  	</ol>
+		
+		  	<!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox" style="max-height:450px;overflow:hidden;">
+			    <div class="item active">
+			      <a href="http://cu.bgfretail.com/index.do"><img class="imgs" src='<c:url value="/img/cu info.jpg"/>'/></a>
+			    </div>
+			    <div class="item">
+			      <a href="http://gs25.gsretail.com/gscvs/ko/main"><img class="imgs" src='<c:url value="/img/gs25 info.jpg"/>'/></a>
+			    </div>
+			    <div class="item">
+			    	<a href="http://www.7-eleven.co.kr/"><img class="imgs" src='<c:url value="/img/7 ELEVEN info.jpg"/>'/></a>
+			    </div>
+			    <div class="item">
+			    	<a href="http://www.with-me.co.kr/index.asp"><img class="imgs" src='<c:url value="/img/With Me info.jpg"/>'/></a>
+			    </div>
+			    <div class="item">
+			    	<a href="https://www.ministop.co.kr/"><img class="imgs" src='<c:url value="/img/ministop info.jpg"/>'/></a>
+			    </div>
+			  </div>
+		
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
 	</nav>
 	
 	<section>
