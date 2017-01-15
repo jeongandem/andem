@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ include file="/inc/top.jsp" %>
 	<nav>
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<div style="clear:both;" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
 				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -126,8 +126,9 @@
 	      					<p><span>1,500</span>원</p>
 	      				</div>
 	      			</div>
+	      			<button class="btn" style="position:absolute; right: 0%; top: 0%">더보기</button>
 				</div>
-	   
+				
 				<div class="tab-pane fade" id="cu21">
 	      			<div class="col-sm-3">
 	      				<div class="row">
@@ -165,6 +166,7 @@
 	      					<p><span>3,500</span>원</p>
 	      				</div>
 	      			</div>
+	      			<button class="btn" style="position:absolute; right: 0%; top: 0%">더보기</button>
 	   			</div>
 	   
 	   			<div class="tab-pane fade" id="cu증정">
@@ -189,6 +191,7 @@
 		      				</div>
 	      				</div>
 	      			</div>
+	      			<button class="btn" style="position:absolute; right: 0%; top: 0%">더보기</button>
 	   			</div>
 			</div>
 		</div>
@@ -206,18 +209,21 @@
 	      			<div class="col-sm-4">1+1</div>
 	      			<div class="col-sm-4">1+1</div>
 	      			<div class="col-sm-4">1+1</div>
+	      			<button class="btn" style="position:absolute; right: 0%; top: 0%">더보기</button>
 				</div>
 	   
 				<div class="tab-pane fade" id="gs21">
 	      			<div class="col-sm-4">2+1</div>
 	      			<div class="col-sm-4">2+1</div>
 	      			<div class="col-sm-4">2+1</div>
+	      			<button class="btn" style="position:absolute; right: 0%; top: 0%">더보기</button>
 	   			</div>
 	   
 	   			<div class="tab-pane fade" id="gs증정">
 	      			<div class="col-sm-4">증정</div>
 	      			<div class="col-sm-4">증정</div>
 	      			<div class="col-sm-4">증정</div>
+	      			<button class="btn" style="position:absolute; right: 0%; top: 0%">더보기</button>
 	   			</div>
 			</div>
 		</div>
@@ -235,18 +241,21 @@
 	      			<div class="col-sm-4">1+1</div>
 	      			<div class="col-sm-4">1+1</div>
 	      			<div class="col-sm-4">1+1</div>
+	      			<button class="btn" style="position:absolute; right: 0%; top: 0%">더보기</button>
 				</div>
 	   
 				<div class="tab-pane fade" id="se21">
 	      			<div class="col-sm-4">2+1</div>
 	      			<div class="col-sm-4">2+1</div>
 	      			<div class="col-sm-4">2+1</div>
+	      			<button class="btn" style="position:absolute; right: 0%; top: 0%">더보기</button>
 	   			</div>
 	   
 	   			<div class="tab-pane fade" id="se증정">
 	      			<div class="col-sm-4">증정</div>
 	      			<div class="col-sm-4">증정</div>
 	      			<div class="col-sm-4">증정</div>
+	      			<button class="btn" style="position:absolute; right: 0%; top: 0%">더보기</button>
 	   			</div>
 			</div>
 		</div>
@@ -264,18 +273,21 @@
 	      			<div class="col-sm-4">1+1</div>
 	      			<div class="col-sm-4">1+1</div>
 	      			<div class="col-sm-4">1+1</div>
+	      			<button class="btn" style="position:absolute; right: 0%; top: 0%">더보기</button>
 				</div>
 	   
 				<div class="tab-pane fade" id="wm21">
 	      			<div class="col-sm-4">2+1</div>
 	      			<div class="col-sm-4">2+1</div>
 	      			<div class="col-sm-4">2+1</div>
+	      			<button class="btn" style="position:absolute; right: 0%; top: 0%">더보기</button>
 	   			</div>
 	   
 	   			<div class="tab-pane fade" id="wm증정">
 	      			<div class="col-sm-4">증정</div>
 	      			<div class="col-sm-4">증정</div>
 	      			<div class="col-sm-4">증정</div>
+	      			<button class="btn" style="position:absolute; right: 0%; top: 0%">더보기</button>
 	   			</div>
 			</div>
 		</div>
@@ -293,18 +305,21 @@
 	      			<div class="col-sm-4">1+1</div>
 	      			<div class="col-sm-4">1+1</div>
 	      			<div class="col-sm-4">1+1</div>
+	      			<button class="btn" style="position:absolute; right: 0%; top: 0%">더보기</button>
 				</div>
 	   
 				<div class="tab-pane fade" id="ms21">
 	      			<div class="col-sm-4">2+1</div>
 	      			<div class="col-sm-4">2+1</div>
 	      			<div class="col-sm-4">2+1</div>
+	      			<button class="btn" style="position:absolute; right: 0%; top: 0%">더보기</button>
 	   			</div>
 	   
 	   			<div class="tab-pane fade" id="ms증정">
 	      			<div class="col-sm-4">증정</div>
 	      			<div class="col-sm-4">증정</div>
 	      			<div class="col-sm-4">증정</div>
+	      			<button class="btn" style="position:absolute; right: 0%; top: 0%">더보기</button>
 	   			</div>
 			</div>
 		</div>
