@@ -1,6 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@include file="/inc/top.jsp"%>
+<%@ include file="/inc/top.jsp"%>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$("#write").click(function(){
+		location.href="${pageContext.request.contextPath}/board/qnaWrite.do"
+	})
+	
+})
+
+</script>
 
 <nav>
 	<div class="row">
@@ -10,7 +21,7 @@
 	<div class="row">
 		
 		<div class="col-sm-offset-2 col-sm-8">
-			<h1>FAQ</h1>
+			<h1>1:1문의</h1>
 			<table class="table">
 				<tr>
 					<th>번호</th>
@@ -26,7 +37,7 @@
 				</tr>
 			</table>
 			
-			<form name="faqfrm" method="post" action="${pageContext.request.contextPath }/board/FAQ.do">
+			<form name="faqfrm" method="post" action="${pageContext.request.contextPath }/board/qna.do">
 				<select>
 					<option>제목</option>
 					<option>내용</option>
@@ -35,11 +46,10 @@
 				<input type="submit" value="검색">
 			</form>
 			
+			<button id="write">글쓰기</button>
+			
 			<!-- paging처리할곳 -->
 			
-			<p class="text-center">찾으시는 답변이 없으면 
-				<a href="${pageContext.request.contextPath }/board/qna.do">1:1문의</a>를 이용해 주세요
-			</p>
 		</div><!-- col-sm-8 -->
 	</div><!-- row -->
 
@@ -50,4 +60,7 @@
 
 
 
-<%@include file="/inc/bottom.jsp"%>
+
+
+
+<%@ include file="/inc/bottom.jsp"%>
