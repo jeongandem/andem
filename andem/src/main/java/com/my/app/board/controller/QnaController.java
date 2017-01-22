@@ -34,10 +34,15 @@ public class QnaController {
 	@RequestMapping(value="/board/qnaWrite.do",method=RequestMethod.POST)
 	public String qnaWrite_post(){
 		
-		return "";
+		return "board/qna";
 	}
 	
 	
+	@RequestMapping(value="/board/qnaDetail.do")
+	public String qnaDetail(){
+		
+		return "board/qnaDetail";
+	}
 	
 	
 	
