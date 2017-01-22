@@ -2,9 +2,14 @@ package com.my.app.board.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.my.app.board.model.QnaService;
+import com.my.app.board.model.QnaVO;
 
 @Controller
 public class QnaController {
@@ -12,6 +17,8 @@ public class QnaController {
 	private static final Logger logger = 
 			LoggerFactory.getLogger(QnaController.class);
 	
+	@Autowired
+	private QnaService service;
 	
 	
 	@RequestMapping(value="/board/qna.do",method=RequestMethod.GET)
@@ -35,9 +42,9 @@ public class QnaController {
 	}
 	
 	@RequestMapping(value="/board/qnaWrite.do",method=RequestMethod.POST)
-	public String qnaWrite_post(){
-		logger.info("");
-		return "board/qna";
+	public String qnaWrite_post(@ModelAttribute QnaVO vo){
+		logger.info("qna작성 파라미터 vo = {}",vo);
+		return "redirect:/board/qna.do";
 	}
 	
 	
