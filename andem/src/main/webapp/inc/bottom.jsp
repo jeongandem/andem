@@ -20,7 +20,7 @@
 						<a href="#"><span class="tds glyphicon glyphicon-user"/> FAQ</a>
 					</div>
 					<div class="col-sm-6">
-						<a href="#"><span class="tds glyphicon glyphicon-envelope"/> 1:1 문의</a>
+						<a href='<c:url value="/board/qna.do"/>'><span class="tds glyphicon glyphicon-envelope"/> Q&A</a>
 					</div>
 					<div class="col-sm-6">
 						<a href="#"><span class="tds glyphicon glyphicon-info-sign"/> 공지</a>

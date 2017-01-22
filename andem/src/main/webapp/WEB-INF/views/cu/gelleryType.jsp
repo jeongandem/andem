@@ -8,7 +8,7 @@
 			<ul>
 				<li>
 					<div class="photo col-sm-2">
-						<a href="javascript:view(247);"><img src="http://cdn2.bgfretail.com/bgfbrand/files/product/8801062628773.jpg" alt="8801062628773.jpg" width="180" height="180"></a>
+						<a href="#"><img src="http://cdn2.bgfretail.com/bgfbrand/files/product/8801062628773.jpg" alt="8801062628773.jpg" width="180" height="180"></a>
 					</div>
 					<p class="prodName"><a href="javascript:view(247);">가나초코바땅콩</a></p>
 					<p class="prodPrice"><span>1,000</span>원</p>

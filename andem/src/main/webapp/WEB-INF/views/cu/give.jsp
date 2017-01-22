@@ -9,11 +9,11 @@
 				<div class="presentListBox">
 					<div class="presentList-w col-sm-2">
 						<div class="photo">
-							<a href="javascript:view(95);"><img src="http://cdn2.bgfretail.com/bgfbrand/files/product/8801019603426.jpg"alt="8801019603426.jpg" width="180" height="180"></a>
+							<a href="#"><img src="http://cdn2.bgfretail.com/bgfbrand/files/product/8801019603426.jpg"alt="8801019603426.jpg" width="180" height="180"></a>
 						</div>
 		
 						<p class="prodName">
-							<a href="javascript:view(95);">해태)맛동산180g</a>
+							<a href="#">해태)맛동산180g</a>
 						</p>
 		
 						<p class="prodPrice">
@@ -29,11 +29,11 @@
 		
 					<div class="presentList-e col-sm-2">
 						<div class="photo">
-							<a href="javascript:view(3191);"><img src="http://cdn2.bgfretail.com/bgfbrand/files/product/39BEE4C9008745808D7106F2BD768081.jpg" alt="39BEE4C9008745808D7106F2BD768081.jpg" width="130" height="130"></a>
+							<a href="#"><img src="http://cdn2.bgfretail.com/bgfbrand/files/product/39BEE4C9008745808D7106F2BD768081.jpg" alt="39BEE4C9008745808D7106F2BD768081.jpg" width="130" height="130"></a>
 						</div>
 						
 						<p class="prodName">
-							<a href="javascript:view(3191);">해태)포키녹차44g</a>
+							<a href="#">해태)포키녹차44g</a>
 						</p>
 		
 						<p class="prodPrice">1,500원</p>

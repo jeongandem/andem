@@ -19,41 +19,51 @@ $(document).ready(function(){
 </nav>
 <section>
 	<div class="row">
-		
-		<div class="col-sm-offset-2 col-sm-8">
-			<h1>1:1문의</h1>
-			<table class="table">
+		<div class="col-sm-offset-1 col-sm-10">
+			<h1>Q&A</h1>
+			<table class="table table-hover">
 				<colgroup>
 					<col style="width: 10%"/>
+					<col style="width: 15%"/>
 					<col style="width: *"/>
-					<col style="width: 20%"/>
-					<col style="width: 20%"/>
+					<col style="width: 10%"/>
+					<col style="width: 10%"/>
+					<col style="width: 10%"/>
 				</colgroup>
-				<tr>
-					<th>번호</th>
-					<th>제목</th>
-					<th>작성자</th>
-					<th>등록일</th>
-				</tr>
-				<tr>
-					<td>0</td>
-					<td>이게 뭐죠?</td>
-					<td>유태경</td>
-					<td>2017-01-17</td>
-				</tr>
+				<thead>
+					<tr>
+						<th>번호</th>
+						<th>카테고리</th>
+						<th>제목</th>
+						<th>답글여부</th>
+						<th>작성자</th>
+						<th>등록일</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td>0</td>
+						<td>CU</td>
+						<td><a href='<c:url value="/board/qnaDetail.do"/>' style="text-decoration: none; color: black;">이게 뭐죠?</a></td>
+						<td>Yes</td>
+						<td>유태경</td>
+						<td>2017-01-17</td>
+					</tr>
+				</tbody>
 			</table>
 			<div class="text-center">
-			<div class="form-group">
-				<form class="form-inline" name="qnafrm" method="post" action="${pageContext.request.contextPath }/board/qna.do">
-					<select name="category" class="form-control" size="1">
-						<option>제목</option>
-						<option>내용</option>
-						<option>작성자</option>
-					</select>
-					<input class="form-control" type="text" name="search">
-					<input class="form-control" type="submit" value="검색">
-					<button class="form-control"id="write" type="button">글쓰기</button>
-				</form>
+				<div class="form-group">
+					<form class="form-inline" name="qnafrm" method="post" action="${pageContext.request.contextPath }/board/qna.do">
+						<select name="category" class="form-control" size="1">
+							<option>제목</option>
+							<option>내용</option>
+							<option>작성자</option>
+						</select>
+						<input class="form-control" type="text" name="search">
+						<input class="form-control" type="submit" value="검색">
+						<button class="form-control"id="write" type="button">글쓰기</button>
+					</form>
 				</div>
 			</div>
 			<!-- paging처리할곳 -->

@@ -30,14 +30,11 @@
 		})
 	})
 </script>
-
-
 	<nav>
 		<div class="row"></div>
 	</nav>
 	
 	<section>
-		
 		<div class="row">
 			<div class="col-sm-offset-2">
 				<h2>Q&#38;A 작성</h2>
@@ -55,7 +52,22 @@
 						<div class="col-sm-2">
 							<input id="pwd" class="form-control" type="password" name="pwd">
 						</div>
-					</div>	
+					</div>
+					
+					<div class="form-group">	
+						<label class="control-label col-sm-2">카테고리</label>
+						<div class="col-sm-2">
+							<select class="form-control">
+								<option>-선택-</option>
+								<option>CU</option>
+								<option>GS25</option>
+								<option>SEVEN-ELEVEN</option>
+								<option>With Me</option>
+								<option>Mini Stop</option>
+							</select>
+						</div>
+					</div>
+					
 					<div class="form-group">	
 						<label class="control-label col-sm-2">제목</label>
 						<div class="col-sm-8">
