@@ -9,6 +9,8 @@ $(document).ready(function(){
 		location.href="${pageContext.request.contextPath}/board/qnaWrite.do"
 	})
 	
+	
+	
 })
 
 </script>

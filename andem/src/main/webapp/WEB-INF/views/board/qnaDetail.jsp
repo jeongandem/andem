@@ -22,8 +22,8 @@
 						<col width="35%">
 					</colgroup>
 					
-					<tr><td>제목</td><td>이게 뭐죠?</td><td>작성자</td><td>유태경</td></tr>
-					<tr><td>문의일</td><td>2017-01-17</td><td>답변여부</td><td>Yes</td></tr>
+					<tr><td class="tlabel">제목</td><td>이게 뭐죠?</td><td class="tlabel">작성자</td><td>유태경</td></tr>
+					<tr><td class="tlabel">문의일</td><td>2017-01-17</td><td class="tlabel">답변여부</td><td>Yes</td></tr>
 				</table>
 				
 				<table class="table">
@@ -35,7 +35,7 @@
 						<td style="text-align: center;">
 							<img style="width: 60%;" alt="Q" src='<c:url value="/img/Q.png"/>'>
 							<br>
-							<span>문의하신 내용</span>
+							<span class="tlabel">문의하신 내용</span>
 						</td>
 						<td>ㅁㅁㅁ</td>
 					</tr>
@@ -43,7 +43,7 @@
 						<td style="text-align: center;">
 							<img style="width: 60%;" alt="A" src='<c:url value="/img/A.png"/>'>
 							<br>
-							<span>답변 내용</span>
+							<span class="tlabel">답변 내용</span>
 						</td>
 						<td>ㅁㅁㅁ</td>
 					</tr>
