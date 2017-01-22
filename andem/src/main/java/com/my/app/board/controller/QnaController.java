@@ -1,9 +1,12 @@
 package com.my.app.board.controller;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,8 +25,14 @@ public class QnaController {
 	
 	
 	@RequestMapping(value="/board/qna.do",method=RequestMethod.GET)
-	public String qna_get(){
+	public String qna_get(Model model){
 		logger.info("qna페이지");
+		
+		List<QnaVO> alist = service.selectAll();
+		
+		model.addAttribute("alist", alist);
+		
+		
 		return "board/qna";
 	}
 	
@@ -44,7 +53,17 @@ public class QnaController {
 	@RequestMapping(value="/board/qnaWrite.do",method=RequestMethod.POST)
 	public String qnaWrite_post(@ModelAttribute QnaVO vo){
 		logger.info("qna작성 파라미터 vo = {}",vo);
-		return "redirect:/board/qna.do";
+		
+		int cnt = service.insertQna(vo);
+		
+		
+		if(cnt>0){
+			return "redirect:/board/qna.do";
+		}else{
+			return "";
+		}
+		
+		
 	}
 	
 	

@@ -44,14 +44,31 @@ $(document).ready(function(){
 				</thead>
 				
 				<tbody>
-					<tr>
+					<%-- <tr>
 						<td>0</td>
 						<td>CU</td>
 						<td><a href='<c:url value="/board/qnaDetail.do"/>' style="text-decoration: none; color: black;">이게 뭐죠?</a></td>
 						<td>Yes</td>
 						<td>유태경</td>
 						<td>2017-01-17</td>
-					</tr>
+					</tr> --%>
+					<c:if test="${empty alist }">
+						<tr><td colspan="6">등록된 질문이 없습니다.</td></tr>
+					</c:if>
+					
+					<c:if test="${!empty alist }">
+						<c:forEach var="vo" items="${alist }">
+							<tr>
+								<td>${vo.qno }</td>
+								<td>${vo.category }</td>
+								<td>${vo.title }</td>
+								<td>${vo.answer }</td>
+								<td>${vo.name }</td>
+								<td>${vo.regdate }</td>
+							</tr>
+						</c:forEach>
+					</c:if>
+					
 				</tbody>
 			</table>
 			<div class="text-center">

@@ -11,12 +11,49 @@ public class QnaVO {
 	private String content;
 	private Timestamp regdate;
 	private String answer;
+	private String category;
+	private String title;
 	
 	public QnaVO() {
 	}
 	
 	
-	public QnaVO(int qno, String name, String pwd, String content, Timestamp regdate, String answer) {
+	
+
+	public String getCategory() {
+		return category;
+	}
+
+
+
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+
+
+
+	
+
+
+
+	public String getTitle() {
+		return title;
+	}
+
+
+
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+
+
+
+	public QnaVO(int qno, String name, String pwd, String content, Timestamp regdate, String answer, String category,
+			String title) {
 		super();
 		this.qno = qno;
 		this.name = name;
@@ -24,7 +61,11 @@ public class QnaVO {
 		this.content = content;
 		this.regdate = regdate;
 		this.answer = answer;
+		this.category = category;
+		this.title = title;
 	}
+
+
 
 
 	public int getQno() {
@@ -68,7 +109,7 @@ public class QnaVO {
 	@Override
 	public String toString() {
 		return "QnaVO [qno=" + qno + ", name=" + name + ", pwd=" + pwd + ", content=" + content + ", regdate=" + regdate
-				+ ", answer=" + answer + "]";
+				+ ", answer=" + answer + ", category=" + category + ", title=" + title + "]";
 	}
 	
 	
