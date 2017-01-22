@@ -23,7 +23,7 @@ public class CuController {
 		return "cu/sale";
 	} // cusale
 	
-<<<<<<< HEAD
+
 	@RequestMapping(value="/cu/test.do")
 	public void test(Model model ){
 		
@@ -32,12 +32,12 @@ public class CuController {
 		model.addAttribute("test",test);
 		
 	}
-=======
+
 	@RequestMapping(value="/cu/event.do")
 	public String event(){
 		logger.info("cu event 화면  보여주기");
 		
 		return "cu/event";
 	} // cusale
->>>>>>> branch 'master' of https://github.com/jeongandem/andem.git
+
 } // class
