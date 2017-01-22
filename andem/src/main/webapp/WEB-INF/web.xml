@@ -4,11 +4,9 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath*:config/spring/context-*.xml</param-value>
 	</context-param>
-	
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
-  
   <servlet>
     <servlet-name>appServlet</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -18,12 +16,10 @@
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
-  
   <servlet-mapping>
     <servlet-name>appServlet</servlet-name>
     <url-pattern>*.do</url-pattern>
   </servlet-mapping>
-  
   <filter>
     <filter-name>encodingFilter</filter-name>
     <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -32,13 +28,14 @@
       <param-value>utf-8</param-value>
     </init-param>
   </filter>
-  
   <filter-mapping>
     <filter-name>encodingFilter</filter-name>
     <url-pattern>*.do</url-pattern>
   </filter-mapping>
-  
   <session-config>
     <session-timeout>20</session-timeout>
   </session-config>
+   <welcome-file-list>
+	    <welcome-file>main.do</welcome-file>
+	  </welcome-file-list>
 </web-app>
