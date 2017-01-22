@@ -30,7 +30,7 @@
 				</tr>
 				<tr>
 					<td class="tlabel">내용</td>
-					<td></td>
+					<td>아브라카다브라</td>
 				</tr>
 			</table>
 			
