@@ -1,5 +1,13 @@
 package com.my.app.board.model;
 
-public class QnaServiceImpl {
+import org.springframework.stereotype.Service;
+
+@Service
+public class QnaServiceImpl implements QnaService{
+
+	@Override
+	public int insertQna(QnaVO vo) {
+		return 0;
+	}
 
 }
