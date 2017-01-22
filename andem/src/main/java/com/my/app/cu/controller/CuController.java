@@ -15,4 +15,11 @@ public class CuController {
 		
 		return "cu/sale";
 	} // cusale
+	
+	@RequestMapping(value="/cu/event.do")
+	public String event(){
+		logger.info("cu event 화면  보여주기");
+		
+		return "cu/event";
+	} // cusale
 } // class
