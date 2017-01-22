@@ -12,8 +12,7 @@
 		border: 2px solid black;
 	}
 </style>
-	<section>
-		<hr>
+	<section style="clear: both;">
 		<h2>할인행사</h2>
 		<div class="row" style="border-top: 1px solid black; border-bottom: 1px solid black;">
 			<form id="search" method="post" action="">
