@@ -12,6 +12,27 @@
 		border: 2px solid black;
 	}
 </style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#list").click(function(){
+			$(".table").css('display','block');
+			$(".divs").css('display','none');
+			$(".give").css('display','none');
+		});
+		
+		$("#gellery").click(function(){
+			$(".divs").css('display','block');
+			$(".table").css('display','none');
+			$(".give").css('display','none');
+		});
+		
+		$("#plus").click(function(){
+			$(".divs").css('display','none');
+			$(".table").css('display','none');
+			$(".give").css('display','block');
+		});
+	});
+</script>
 	<section style="clear: both;">
 		<h2>할인행사</h2>
 		<div class="row" style="border-top: 1px solid black; border-bottom: 1px solid black;">
@@ -46,35 +67,21 @@
 				<li class="plus">
 					2+1&nbsp;<span class="glyphicon glyphicon-chevron-down"></span>
 				</li>
-				<li class="plus">
-					할인행사&nbsp;<span class="glyphicon glyphicon-chevron-down"></span>
+				<li class="plus" id="plus">
+					증정행사&nbsp;<span class="glyphicon glyphicon-chevron-down"></span>
 				</li>
 			</ul>
 		</div><!-- 상품 행사 선택 -->
 		<div class="row pull-right">
-			<button class="btn"><span class="glyphicon glyphicon-th-large"></span></button>
-			<button class="btn"><span class="glyphicon glyphicon-th-list"></span></button>
+			<button class="btn" id="gellery"><span class="glyphicon glyphicon-th-large"></span></button>
+			<button class="btn" id="list"><span class="glyphicon glyphicon-th-list"></span></button>
 		</div><!-- 게시판형, 갤러리형 선택 -->
-		<div class="row">
-			<table class="table table-hover">
-				<colgroup>
-					<col width="20%">
-					<col width="*">
-					<col width="23%">
-					<col width="23%">
-				</colgroup>
-				<!-- 반복시작 -->
-				<tr>
-					<td style="text-align: center;">
-						<img style="width: 50%; padding: 0%" alt="상품 사진" src="http://cdn2.bgfretail.com/bgfbrand/files/product/9C306805243442778E39114748D936D8.jpg">
-					</td>
-					<td style="vertical-align: middle;">이름</td>
-					<td style="vertical-align: middle;">가격</td>
-					<td style="vertical-align: middle;">행사</td>
-					<td style="vertical-align: middle;"></td>
-				</tr>
-				<!-- 반복 끝 -->
-			</table>
-		</div><!-- 상품 목록 -->
+		
+		<%@include file="listType.jsp" %><!-- 게시판형 -->
+		
+		<%@include file="gelleryType.jsp" %> <!-- 갤러리형 -->
+		
+		<%@include file="give.jsp" %> <!-- 갤러리형 -->
+		
 	</section>
 <%@ include file="/inc/bottom.jsp" %>
