@@ -46,7 +46,7 @@
 	<section>
 		<div class="row">
 			<div class="col-sm-offset-3 col-sm-6" style="">
-				<form id="" method="post" action="">
+				<form id="searchFrm" method="post" action='<c:url value="/search.do"/>'>
 					<div class="" style="margin-top:20px; border: 2px solid pink; border-radius: 10px;">
 						<div class="row">
 							<div class="radio" style="text-align: center;">

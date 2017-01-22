@@ -15,4 +15,11 @@ public class MainController {
 		
 		return "main";
 	} // showMain
+	
+	@RequestMapping("/search.do")
+	public String search() {
+		logger.info("검색화면 보여주기");
+		
+		return "search";
+	} //search
 }// class

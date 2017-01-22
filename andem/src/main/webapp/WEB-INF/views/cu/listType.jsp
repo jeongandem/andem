@@ -16,7 +16,6 @@
 			<td style="vertical-align: middle;">이름</td>
 			<td style="vertical-align: middle;">가격</td>
 			<td style="vertical-align: middle;">행사</td>
-			<td style="vertical-align: middle;"></td>
 		</tr>
 		<!-- 반복 끝 -->
 	</table>
