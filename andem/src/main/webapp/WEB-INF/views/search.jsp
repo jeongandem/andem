@@ -50,8 +50,8 @@
 				<col width="20%">
 				<col width="20%">
 			</colgroup>
-			<!-- 반복시작 -->
-			<tr>
+			<!-- 반복시작 --> 
+			<tr> 
 				<td style="text-align: center;">
 					<img style="width: 50%; padding: 0%" alt="상품 사진" src="http://cdn2.bgfretail.com/bgfbrand/files/product/9C306805243442778E39114748D936D8.jpg">
 				</td>
